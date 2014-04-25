@@ -1,4 +1,6 @@
-navigator.geolocation.getCurrentPosition(show_location, big_error);
+function onDeviceReady() {
+	navigator.geolocation.getCurrentPosition(show_location, big_error);
+}
 
 function show_location(position) {
     var lat = position.coords.latitude;
